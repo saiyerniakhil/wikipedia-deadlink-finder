@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Dead links</title>
+    <style>
+        body {
+            background: #B2DFDB;
+        }
+        .container {
+            margin: auto;
+            position: absolute;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2>Dead links on your wikipedia page</h2>
+    <ul>
+        {% for i in data %}
+            <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+    <p>Total Dead Links {{ total }}</p>
+    <p>Time taken: {{ time_taken }} seconds</p>
+</div>
+{% endblock %}

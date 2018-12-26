@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title> Wikipedia Dead Link Finder</title>
+    <style>
+        .container {
+            margin: auto;
+            position: absolute;
+            top: 200px; left: 0; bottom: 0; right: 0;
+        }
+        #label_for {
+            font-size: 20px;
+        }
+        body {
+            background: #B2DFDB;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    
+    <div class='container text-center'>
+    <form action="{{ url_for("view") }}" method="post">
+    <div class="form-group">
+        <label for="link_to" id="label_for">Enter Wikipedia URL</label> <br>
+        <input type="text" placeholder="Enter Wikpedia URL" name="link_to" class="form-control">
+    </div>
+
+       <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    </div>
+{% endblock %}
