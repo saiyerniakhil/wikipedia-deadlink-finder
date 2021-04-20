@@ -115,9 +115,9 @@ def deadLinkFinder(url):
                 print("* ", i) """
 
 
-link = input("Enter your URL")
+# link = input("Enter your URL")
 
-start_time = time.time()
-deadLinkFinder(link)
-end_time = time.time()-start_time
-print('total time taken = ',end_time)
+# start_time = time.time()
+# deadLinkFinder(link)
+# end_time = time.time()-start_time
+# print('total time taken = ',end_time)
